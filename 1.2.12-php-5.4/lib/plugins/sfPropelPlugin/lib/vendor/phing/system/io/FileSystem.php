@@ -150,7 +150,7 @@ abstract class FileSystem {
      * by the given abstract pathname, or zero if it does not exist or some
      * other I/O error occurs.
      */
-    function getBooleanAttributes($f) {
+    function getBooleanAttributes(&$f) {
         throw new Exception("SYSTEM ERROR method getBooleanAttributes() not implemented by fs driver");
     }
 
